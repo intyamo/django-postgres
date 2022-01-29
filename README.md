@@ -9,9 +9,11 @@ We'll manage this stuff via awesome [poetry](https://python-poetry.org):
 ```sh
 # run in the root of our project
 poetry init
-poetry add django ~=3.2
-poetry add psycopg2-binary
+poetry add django~=3.2
+poetry add psycopg2-binary~=2.9
 ```
+
+[Tilde requirement](https://python-poetry.org/docs/dependency-specification/#tilde-requirements) `~=` allows to update to [semver-compatible version](https://doc.rust-lang.org/cargo/reference/resolver.html#semver-compatibility).
 
 2. Database
 
